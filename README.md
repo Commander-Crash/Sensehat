@@ -40,7 +40,8 @@ determines the importance or urgency of a message relative to others. It allows 
             echo "0|hello |[255,0,0]|0.1|path/to/audio/file.mp3|1" | nc <ip addr> <port>
             echo "1|urgent message|[0,255,0]|0.2||1" | nc -U /tmp/sense_hat_socket
             
-Each "|" is a command argument. so if you dont want espeak then dont use "1" ie. jusat messageing: 
+Each "|" is a command argument.
+
 brake it down:
 echo "Proirty|Msg|[color_code]|speed_of_scroll|mp3/wav_file_to_play|espeak_1_0" | 
             
